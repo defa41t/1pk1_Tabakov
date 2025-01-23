@@ -1,0 +1,29 @@
+﻿namespace Task_03_09
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Сумма вклада: ");
+            double x = double.Parse(Console.ReadLine());
+
+            Console.Write("Проценты в год: ");
+            double p = double.Parse(Console.ReadLine());
+
+            Console.Write("Желаемая сумма вклада: ");
+            double y = double.Parse(Console.ReadLine());
+
+            int years = 0;
+
+            while (x < y)
+            {
+                x += x * p / 100;
+                x = Math.Floor(x * 100) / 100;
+                years++;
+                
+            }
+            Console.WriteLine(years);
+
+        }
+    }
+}
