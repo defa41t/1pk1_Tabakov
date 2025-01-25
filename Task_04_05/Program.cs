@@ -45,6 +45,7 @@
             Console.WriteLine($"3-ая декада: {decades[2]}");
             Console.WriteLine($"День с самыми сильными осадками: {days} (осадки: {maxRain} мм)");
 
+            //Дни без осадков
             Console.WriteLine("Дни без осадков:");
             for (int i = 0; i < rain.Length; i++)
             {
