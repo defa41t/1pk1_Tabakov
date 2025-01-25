@@ -2,6 +2,10 @@
 {
     internal class Program
     {
+        /* Пользователь вводит свою дату рождения построчно (сначала год, потом месяц и в конце дату) произведите 
+        расчет является ли пользователь совершеннолетним на текущую дату и выведите соответствующее сообщение об 
+        этом
+         */
         static void Main(string[] args)
         {
             Console.Write("Year: ");
@@ -24,11 +28,11 @@
             }
             if (age >= 18)
             {
-                Console.WriteLine("Nice");
+                Console.WriteLine("Совершеннолетний");
             }
             else
             { 
-                Console.WriteLine("Bad");
+                Console.WriteLine("Несовершеннолетний");
             }
         }
     }
