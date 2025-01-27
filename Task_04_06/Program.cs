@@ -11,44 +11,29 @@ namespace Task_04_06
          */
         static void Main(string[] args)
         {
+
             
-            int array = 20;
-            int[] nums = new int[array];
+            int[] array = new int[10];
+            int[] array1 = new int[array.Length];
+
+            
             Random rnd = new Random();
-            HashSet<int> abs = new HashSet<int>();
-
-            int index = 0;
-            while (index < array)
-            {
-                int randNum = rnd.Next(-100, 101);
-
-                //Предотвращаем повторение
-                if (abs.Add(Math.Abs(randNum)))
-                {
-                    nums[index] = randNum;
-                    
-                }
-                index++;
-            }
-
-            Console.Write("Сгенерированный массив: ");
-            foreach (var number in nums)
-            {
-                Console.Write(number + " ");
-            }
-
-            // Поиск наибольшего по модулю числа
-            int maxAbsValue = nums[0];
-            foreach (var number in nums)
-            {
-                if (Math.Abs(number) > Math.Abs(maxAbsValue))
-                {
-                    maxAbsValue = number;
-                }
-            }
-
-            Console.WriteLine($"\nНаибольшее по модулю число: {maxAbsValue}");
             
+            for (int i = 0;  i < array.Length; i++)
+            {
+                int value = rnd.Next(-20, 21);
+                if (Array.IndexOf(array1, value) != -1) continue;
+                array[i] = value * (rnd.Next(0, 2) == 0 ? 1 : -1);
+                array1[i] = value;
+                
+            }
+            Console.Write("Массив: ");
+            foreach (int element in array) Console.Write(element + " ");
+            Console.WriteLine("");
+
+            //Наибольшее по модулю число
+            Console.WriteLine($"Наибольшее по модулю число: {array[Array.IndexOf(array1, array1.Max())]}");
+
         }
     }
 
