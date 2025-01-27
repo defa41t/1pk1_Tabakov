@@ -28,11 +28,11 @@
             }
             if (age >= 18)
             {
-                Console.WriteLine("Совершеннолетний");
+                Console.WriteLine("Совершеннолетний!");
             }
             else
             { 
-                Console.WriteLine("Несовершеннолетний");
+                Console.WriteLine("Несовершеннолетний.");
             }
         }
     }
