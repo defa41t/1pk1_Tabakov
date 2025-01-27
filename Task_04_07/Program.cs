@@ -51,9 +51,9 @@
 
             // Вывод результатов
             Console.WriteLine($"Количество мальчиков: {boysCount}");
-            Console.WriteLine($"Средний рост мальчиков: {boysAverage:f2} см");
+            Console.WriteLine($"Средний рост мальчиков: {Math.Round(boysAverage)} см");
             Console.WriteLine($"Количество девочек: {girlsCount}");
-            Console.WriteLine($"Средний рост девочек: {girlsAverage:f2} см");
+            Console.WriteLine($"Средний рост девочек: {Math.Round(girlsAverage)} см");
         }
     }
 }
