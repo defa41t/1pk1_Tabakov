@@ -14,6 +14,7 @@
             ArrayGeneration(n);
         }
 
+        
         static void ArrayGeneration(int n)
         {
             // Создаем двумерный массив
