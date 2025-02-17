@@ -10,11 +10,11 @@
             int num1 = 2;
             int num2 = 7;
             Console.WriteLine($"Числа: {num1}, {num2}");
-            Reverse(ref num1, ref num2);
+            Reverse(num1, num2);
             Console.WriteLine($"Числа после замены местами: {num1}, {num2}");
         }
 
-        static void Reverse(ref int a, ref int b)
+        static void Reverse(int a, int b)
         {
             int temp = a;
             a = b;
