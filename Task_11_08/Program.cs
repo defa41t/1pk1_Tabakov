@@ -18,6 +18,13 @@
             Console.WriteLine(max);
 
         }
+
+        /// <summary>
+        /// находит сумму чисел и максимальное число
+        /// </summary>
+        /// <param name="summ">сумма</param>
+        /// <param name="max">максимальное число</param>
+        /// <param name="array">числа</param>
         static void SummMax( out int summ, out int max, params int[] array)
         {
             summ = 0;
