@@ -14,6 +14,11 @@
             Console.WriteLine($"Числа после замены местами: {num1}, {num2}");
         }
 
+        /// <summary>
+        /// Меняет числа местами
+        /// </summary>
+        /// <param name="a">первое число</param>
+        /// <param name="b">второе число</param>
         static void Reverse(int a, int b)
         {
             int temp = a;
