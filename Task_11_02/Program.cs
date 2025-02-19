@@ -13,6 +13,11 @@
             Reverse(ref num1, ref num2);
             Console.WriteLine($"Числа после замены: {num1}, {num2}");
         }
+        /// <summary>
+        /// Меняет числа местами
+        /// </summary>
+        /// <param name="a">Первое число</param>
+        /// <param name="b">Второе число</param>
         static void Reverse(ref int a, ref int b)
         {
             int temp = a;
