@@ -23,6 +23,12 @@
 
         }
 
+        /// <summary>
+        /// Находит число гласных и согласных в строке
+        /// </summary>
+        /// <param name="text">строка</param>
+        /// <param name="countVowels">количество гласных</param>
+        /// <param name="countConsonant">количество согласных</param>
         static void CountLetters(string text, out int countVowels, out int countConsonant)
         {
             countVowels = 0;
