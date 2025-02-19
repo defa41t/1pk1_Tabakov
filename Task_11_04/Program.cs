@@ -22,6 +22,11 @@
             Console.WriteLine(AvarageValue(array)); //Вывод
         }
         
+        /// <summary>
+        /// Находит среднее значение массива чисел
+        /// </summary>
+        /// <param name="array">массив чисел</param>
+        /// <returns></returns>
         static int AvarageValue(params int[] array)
         {
             int summ = 0;
