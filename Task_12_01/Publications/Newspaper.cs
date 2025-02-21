@@ -16,14 +16,16 @@ namespace ClassesDemo.Publications
         public string publisher; // издатель
         public string orientation; // направленнность
         public string price; // цена
-        bool isHave = true;
-        bool isNotHave = true;
+        bool isHave = true; // есть ли в наличии
+        bool isNotHave = true; // нету ли в наличии
 
+        // метод класса - выдает информацию о газете
         public void NewsInfo()
         {
             Console.WriteLine($"\n\nГазета {name}, под издательством {publisher}, ее направленность: {orientation}, и стоит она {price}");
         }
 
+        // метод класса - проверяет есть ли газета в наличии
         public void IsHave()
         {
             if ( isHave )
@@ -33,6 +35,7 @@ namespace ClassesDemo.Publications
             
         }
 
+        // метод класса - проверяет закончились ли газеты
         public void IsNotHave()
         {
             if (isNotHave)

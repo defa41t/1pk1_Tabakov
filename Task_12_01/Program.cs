@@ -35,21 +35,21 @@ namespace ClassesDemo
             var journal1 = new Journal() { name = "Техника и вооружение", countPages = "102 стр.", orientation = "военный", price = "930 рублей", date = "2025 г." };
             var journal2 = new Journal() { name = "Мурзилка", date = "2008 г.", price = "640 рублей", orientation = "детский", countPages = "52 стр." };
 
-            journal1.JournalInfo();
-            journal1.Buy();
+            journal1.JournalInfo(); // информация о первом журнале
+            journal1.Buy(); // проверка на наличие первого журнала
 
-            journal2.JournalInfo();
-            journal2.NotBuy();
+            journal2.JournalInfo(); // информация о втором журнале
+            journal2.NotBuy(); // проверка на наличие второго журнала
 
 
             var newspaper1 = new Newspaper() { name = "Известия", orientation = "Новостная", price = "25 рублей", publisher = "АО Редация газеты Известия" };
             var newspaper2 = new Newspaper() { name = "Московский комсомолец", orientation = "Социально-политическая", price = "30 рублей", publisher = "Московский издательский дом" };
 
-            newspaper1.NewsInfo();
-            newspaper1.IsHave();
+            newspaper1.NewsInfo(); // информация о первой газете
+            newspaper1.IsHave(); // проверка на наличие газеты
 
-            newspaper2.NewsInfo();
-            newspaper2.IsNotHave();
+            newspaper2.NewsInfo(); // информация о второгой газете
+            newspaper2.IsNotHave(); // проверка на наличие газеты
         }
     }
 }

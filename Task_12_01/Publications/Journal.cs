@@ -21,19 +21,23 @@ namespace ClassesDemo.Publications
         public string price; //цена
         bool isBuy = true;
         bool isNotBuy = true;
+
+        // метод класса - проверяет продан ли журнал
         public void Buy()
         {
             if (isBuy)
                 Console.WriteLine($"Журнал {name} продан");
             
         }
-        
+
+        // метод класса - проверяет не продан ли журнал
         public void NotBuy()
         {
             if (isNotBuy)
                 Console.WriteLine($"Журнал {name} не продан");
         }
 
+        // метод класса - выдает информацию о газете
         public void JournalInfo()
         {
             Console.WriteLine($"\n\nЖурнал под названием {name} был написан в {date}, " +
