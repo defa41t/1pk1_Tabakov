@@ -26,6 +26,7 @@ namespace Task_20_04
             registry.AddVehicle(new Vehicle(VehicleType.Motorcycle));
             registry.AddVehicle(new Vehicle(VehicleType.Car));
 
+
             Console.Write("Введите цифру т/с, количество которого нужно найти: ");
             int userNum = Convert.ToInt32(Console.ReadLine());
             VehicleType searchType = (VehicleType)userNum;
