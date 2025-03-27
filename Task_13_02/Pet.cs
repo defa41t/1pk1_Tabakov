@@ -35,7 +35,7 @@ namespace Task_13_02
         }
 
         // Конструктор с параметрами
-        public Pet(string name, string type, int age, int weight, bool health)
+        public Pet(string name, string type, int age, int weight, bool health)  
         {
             Name = name;
             Type = type;
