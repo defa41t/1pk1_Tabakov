@@ -20,7 +20,6 @@
 
             key = FindKey(dict, 40);
             Console.WriteLine(key ?? "null");
-
         }
         static string FindKey(Dictionary<string, int> dictionary, int value)
         {
